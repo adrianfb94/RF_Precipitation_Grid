@@ -1,12 +1,18 @@
 # RF_Precipitation_Grid
 
 Source Data: 
-ERA5: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview 
+ERA5: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview
+
 MSWEP: http://www.gloh2o.org 
+
 CHIRP: ftp://ftp.chg.ucsb.edu/pub/org/chg/products/CHIRPS-2.0 
+
 CDT: https://github.com/rijaf-iri/CDT
+
 GPCC: https://rda.ucar.edu/datasets/ds496.0/ 
+
 GPM: https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/ 
+
 
 
 Random Forest grid generation:
