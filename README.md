@@ -1,5 +1,8 @@
 # RF_Precipitation_Grid
 
+A Random Forest is a very popular machine learning technique. Random Forests have a very high generalizability for many problems.
+The purpose of this project is to create a precipitation grid, from different combinations of inputs, using random forest regression as an algorithm. The ERA5, MSWEP, CHIRP, GPCC, GPM and CDT models are used in the preparation of the combinations, they are evaluated and the ones with the best score are selected.
+
 **Source Data:**
 
 ERA5: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview
@@ -24,6 +27,10 @@ datasets of precipitation measured in meteorological stations
 CDT: The monthly data set created with CDT (https://github.com/rijaf-iri/CDT) using CHIRPS (https://data.chc.ucsb.edu/products/CHIRPS-2.0/) and 
 series of precipitation  data measured in meteorological stations. 
 
+
+**The project is structured as follows:**
+
+Read from the raw data, interpolate, using nearest neighbor, and use these interpolations as input to the random forest model. Once training, the results are evaluated and the best combination is selected. For each training the results are saved in netcdf format; In addition, the training models are saved for later use in new predictions.
 
 **Random Forest grid generation:**
 
