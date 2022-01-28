@@ -1,22 +1,31 @@
 # RF_Precipitation_Grid
 
-Source Data: 
+**Source Data:**
 
 ERA5: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview
 
 MSWEP: http://www.gloh2o.org 
 
-CHIRP: https://ftp.chg.ucsb.edu/pub/org/chg/products/CHIRPS-2.0 
-
-CDT: https://github.com/rijaf-iri/CDT
+CHIRP: https://data.chc.ucsb.edu/products/CHIRPS-2.0/
 
 GPCC: https://rda.ucar.edu/datasets/ds496.0/ 
 
 GPM: https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/ 
 
 
+<!-- CDT: The monthly data set created with CDT (https://github.com/rijaf-iri/CDT) was created 
+from CHIRPS (https://data.chc.ucsb.edu/products/CHIRPS-2.0/) and series of precipitation 
+data measured in meteorological stations
 
-Random Forest grid generation:
+CDT dataset (https://github.com/rijaf-iri/CDT) was created from CHIRPS (https://data.chc.ucsb.edu/products/CHIRPS-2.0/) and 
+datasets of precipitation measured in meteorological stations
+ -->
+
+CDT: The monthly data set created with CDT (https://github.com/rijaf-iri/CDT) using CHIRPS (https://data.chc.ucsb.edu/products/CHIRPS-2.0/) and 
+series of precipitation  data measured in meteorological stations. 
+
+
+**Random Forest grid generation:**
 
 1) Read the netcdf of the data and extract values against dates. 
 These values, for each model, are saved in “name_model.mat” (with the original resolution), 
