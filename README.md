@@ -1,9 +1,19 @@
 # RF_Precipitation_Grid
+
+Source Data: 
+ERA5: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview 
+MSWEP: http://www.gloh2o.org 
+CHIRP: ftp://ftp.chg.ucsb.edu/pub/org/chg/products/CHIRPS-2.0 
+CDT: https://github.com/rijaf-iri/CDT
+GPCC: https://rda.ucar.edu/datasets/ds496.0/ 
+GPM: https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/ 
+
+
 Random Forest grid generation:
 
 1) Read the netcdf of the data and extract values against dates. 
 These values, for each model, are saved in “name_model.mat” (with the original resolution), 
-being name_model, the corresponding entry (MSWEP, CDT, etc.). See script 01_script.py.
+being name_model, the corresponding entry (ERA5, MSWEP, GPCC, etc.). See script 01_script.py.
 
 2) The “name_model.mat” data obtained in the previous step is interpolated, 
 using the Nearest Neighbor method, at 5 km resolution, leaving the new 
