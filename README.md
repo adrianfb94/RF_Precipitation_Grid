@@ -35,24 +35,23 @@ Read from the raw data, interpolate, using nearest neighbor, and use these inter
 **Random Forest grid generation:**
 
 1) Read the netcdf of the data and extract values against dates. 
-These values, for each model, are saved in “name_model.mat” (with the original resolution), 
+These values, for each model, are saved in _“name_model.mat”_ (with the original resolution), 
 being name_model, the corresponding entry (ERA5, MSWEP, GPCC, etc.). See script _01_script.py_.
 
-2) The “name_model.mat” data obtained in the previous step is interpolated, 
+2) The _“name_model.mat”_ data obtained in the previous step is interpolated, 
 using the Nearest Neighbor method, at 5 km resolution, leaving the new 
-“name_model_interp_nearest.mat” files. See script _03_script.py_.
+_“name_model_interp_nearest.mat”_ files. See script _03_script.py_.
 
 3) Once the input models (X1, X2, …, Xn) have been interpolated, the _eval.py_ script is executed, 
 in which the possible combinations for RF training are generated. 
-Once trained, each RF model is saved in the “models/” directory, with the name “model_X1_X2_Y_rf_trained.pkl”, 
+Once trained, each RF model is saved in the _“models/”_ directory, with the name _“model_X1_X2_Y_rf_trained.pkl”_, 
 being X1,X2,Y the two predictor models and the paradigm, respectively. Additionally, the metrics obtained during 
 the training are saved in text format, as well as the annual march, and optionally, the visual output of the resulting maps. 
-The results of each combination are saved in netCDF format (“X1_X2_Y_RF.nc”).
+The results of each combination are saved in netCDF format (_“X1_X2_Y_RF.nc”_).
 
 The following example is for May 1988, and was generated with the MSWEP and CDT models as X1 and X2, the GPCC model as Y, and the corresponding Random Forest output
 
 ![alt text](example_rf.png)
 
-en el fichero ![alt text](example_rf.txt) se observa otra cosa
-
+The _metrics_mswep_cdt_gpcc_rf.txt_ file (https://github.com/adrianfb94/RF_Precipitation_Grid/blob/main/metrics_mswep_cdt_gpcc_rf.txt) contains the metrics obtained during the training of the random forest.
 
