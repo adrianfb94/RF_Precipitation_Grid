@@ -1,11 +1,12 @@
 # RF_Precipitation_Grid
 
 Source Data: 
+
 ERA5: https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels-monthly-means?tab=overview
 
 MSWEP: http://www.gloh2o.org 
 
-CHIRP: ftp://ftp.chg.ucsb.edu/pub/org/chg/products/CHIRPS-2.0 
+CHIRP: https://ftp.chg.ucsb.edu/pub/org/chg/products/CHIRPS-2.0 
 
 CDT: https://github.com/rijaf-iri/CDT
 
