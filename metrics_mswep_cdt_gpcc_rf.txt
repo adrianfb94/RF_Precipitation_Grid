@@ -1,0 +1,74 @@
+========== Trainning Random Forest Regressor ========== 
+explained_variance_score (rf,gpcc)       -> 0.77 
+explained_variance_score (mswep,gpcc)   -> 0.68 
+explained_variance_score (cdt,gpcc)    -> 0.64 
+
+  root_mean_sqared_error (rf,gpcc)       -> 55.83 
+  root_mean_sqared_error (mswep,gpcc)   -> 68.28 
+  root_mean_sqared_error (cdt,gpcc)    -> 78.93 
+
+     mean_absolute_error (rf,gpcc)       -> 38.81 
+     mean_absolute_error (mswep,gpcc)   -> 45.57 
+     mean_absolute_error (cdt,gpcc)    -> 55.24 
+
+                r2_score (rf,gpcc)       -> 0.77 
+                r2_score (mswep,gpcc)   -> 0.64 
+                r2_score (cdt,gpcc)    -> 0.64 
+
+                    pcor (rf,gpcc)       -> 0.9 
+                    pcor (mswep,gpcc)   -> 0.87 
+                    pcor (cdt,gpcc)    -> 0.82 
+
+========== Validation Random Forest Regressor ========== 
+explained_variance_score (rf,gpcc)       -> 0.82 
+explained_variance_score (mswep,gpcc)   -> 0.68 
+explained_variance_score (cdt,gpcc)    -> 0.64 
+
+  root_mean_sqared_error (rf,gpcc)       -> 49.77 
+  root_mean_sqared_error (mswep,gpcc)   -> 68.25 
+  root_mean_sqared_error (cdt,gpcc)    -> 78.91 
+
+     mean_absolute_error (rf,gpcc)       -> 35.0 
+     mean_absolute_error (mswep,gpcc)   -> 45.49 
+     mean_absolute_error (cdt,gpcc)    -> 55.26 
+
+                r2_score (rf,gpcc)       -> 0.82 
+                r2_score (mswep,gpcc)   -> 0.64 
+                r2_score (cdt,gpcc)    -> 0.64 
+
+                    pcor (rf,gpcc)       -> 0.92 
+                    pcor (mswep,gpcc)   -> 0.87 
+                    pcor (cdt,gpcc)    -> 0.82 
+
+Variable: mswep                Importance: 0.93
+Variable: cdt                  Importance: 0.07
+
+============================== mswep-gpcc ============================== 
+     nse: 0.7191
+     kge: 0.7809, r: 0.8665, alpha: 0.8813, beta: 0.8732
+kgeprime: 0.8157, r: 0.8665, alpha: 1.0092, beta: 0.8732
+   kgenp: 0.8367, r: 0.8974, alpha: 0.9923, beta: 0.8732
+    rmse: 68.2541
+    mare: 0.2522
+   pbias: 12.6764
+    pcor: 0.8665
+
+============================== cdt-gpcc ============================== 
+     nse: 0.6246
+     kge: 0.8138, r: 0.8179, alpha: 1.0243, beta: 1.0308
+kgeprime: 0.8152, r: 0.8179, alpha: 0.9937, beta: 1.0308
+   kgenp: 0.8347, r: 0.8376, alpha: 0.9961, beta: 1.0308
+    rmse: 78.9058
+    mare: 0.3064
+   pbias: -3.0772
+    pcor: 0.8179
+
+============================== rf-gpcc ============================== 
+     nse: 0.8506
+     kge: 0.8750, r: 0.9225, alpha: 0.9019, beta: 0.9998
+kgeprime: 0.8752, r: 0.9225, alpha: 0.9021, beta: 0.9998
+   kgenp: 0.9261, r: 0.9295, alpha: 0.9779, beta: 0.9998
+    rmse: 49.7677
+    mare: 0.1941
+   pbias: 0.0244
+    pcor: 0.9225
